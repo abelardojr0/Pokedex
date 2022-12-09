@@ -1,0 +1,29 @@
+* {
+  font-family: "Comfortaa", cursive;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  color: white;
+}
+body {
+  background-color: #bdbdbd;
+}
+
+.content {
+  width: 100vw;
+  height: 100%;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    max-width: 992px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+  }
+}
