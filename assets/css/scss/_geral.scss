@@ -1,0 +1,28 @@
+* {
+  font-family: $font;
+}
+body {
+  background-color: $bg;
+  overflow-x: hidden;
+}
+
+.content {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background-color: $cor_fonte_principal;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  border-radius: 15px;
+
+  @include d(t) {
+    max-width: $tablet;
+  }
+  @include d(d) {
+    max-width: $desktop;
+    height: auto;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+}

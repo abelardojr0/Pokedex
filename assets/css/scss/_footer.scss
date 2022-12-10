@@ -1,0 +1,29 @@
+.footer {
+  color: $cor_fonte_secundaria;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2px;
+  width: 100%;
+  background-color: $cor_fonte_principal;
+  // border-top: 2px solid $cor_fonte_secundaria;
+  margin-top: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+  p {
+    @include fontPrincipal(p);
+    line-height: 1.5;
+  }
+  span {
+    color: $cor_fonte_secundaria;
+    @include fontPrincipal(p);
+    line-height: 1.5;
+  }
+
+  img {
+    width: 25px;
+  }
+}

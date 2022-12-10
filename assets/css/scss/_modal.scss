@@ -1,0 +1,82 @@
+.modal-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+}
+
+.modal-container.ativo {
+  display: flex;
+}
+.modal {
+  position: relative;
+  border-radius: 15px;
+  z-index: 999;
+  padding-top: 15px;
+  max-width: 320px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  li {
+    color: $detalhes_titulo;
+    background-color: $cor_fonte_principal;
+    padding: 0.2rem 0.5rem;
+    border-radius: 15px;
+    width: 100%;
+    @include fontPrincipal(m);
+    display: flex;
+    justify-content: space-between;
+  }
+  span {
+    color: $cor_fonte_secundaria;
+    margin-left: 5px;
+  }
+  img {
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 1.5rem;
+    align-self: center;
+    background-image: url(/assets/img/fundo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.modal-detalhes {
+  background-color: $fundo_detalhes;
+  max-width: 320px;
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.fechar {
+  position: absolute;
+  top: 0px;
+  right: -3px;
+  width: 40px;
+  height: 40px;
+  background-color: $fechar;
+  color: $cor_fonte_principal;
+  border: none;
+  border-radius: 50%;
+  @include fontPrincipal(g);
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

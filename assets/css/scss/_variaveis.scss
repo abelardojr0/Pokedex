@@ -1,0 +1,132 @@
+// CORES
+$normal: linear-gradient(
+  0deg,
+  rgba(166, 168, 119, 1) 0%,
+  rgba(117, 119, 87, 1) 72%
+);
+
+$grass: linear-gradient(
+  0deg,
+  rgba(119, 200, 80, 1) 0%,
+  rgba(61, 139, 23, 1) 72%
+);
+
+$fire: linear-gradient(
+  0deg,
+  rgba(238, 127, 48, 1) 0%,
+  rgba(173, 87, 26, 1) 72%
+);
+
+$water: linear-gradient(
+  0deg,
+  rgba(103, 143, 238, 1) 0%,
+  rgba(30, 69, 161, 1) 72%
+);
+
+$electric: linear-gradient(
+  0deg,
+  rgba(247, 207, 46, 1) 0%,
+  rgba(149, 123, 19, 1) 72%
+);
+
+$ice: linear-gradient(
+  0deg,
+  rgba(152, 213, 215, 1) 0%,
+  rgba(28, 124, 128, 1) 72%
+);
+
+$ground: linear-gradient(
+  0deg,
+  rgba(223, 191, 105, 1) 0%,
+  rgba(145, 115, 34, 1) 72%
+);
+
+$flying: linear-gradient(
+  0deg,
+  rgba(169, 143, 240, 1) 0%,
+  rgba(77, 46, 163, 1) 72%
+);
+
+$poison: linear-gradient(
+  0deg,
+  rgba(160, 64, 160, 1) 0%,
+  rgba(103, 25, 103, 1) 72%
+);
+
+$fighting: linear-gradient(
+  0deg,
+  rgba(191, 48, 41, 1) 0%,
+  rgba(131, 31, 26, 1) 72%
+);
+
+$psychic: linear-gradient(
+  0deg,
+  rgba(246, 86, 135, 1) 0%,
+  rgba(147, 29, 65, 1) 72%
+);
+
+$dark: linear-gradient(0deg, rgba(114, 88, 71, 1) 0%, rgba(78, 58, 45, 1) 72%);
+
+$rock: linear-gradient(
+  0deg,
+  rgba(184, 161, 55, 1) 0%,
+  rgba(128, 112, 42, 1) 72%
+);
+
+$bug: linear-gradient(
+  0deg,
+  rgba(168, 183, 32, 1) 0%,
+  rgba(120, 130, 26, 1) 72%
+);
+
+$ghost: linear-gradient(
+  0deg,
+  rgba(110, 88, 150, 1) 0%,
+  rgba(65, 44, 105, 1) 72%
+);
+
+$steel: linear-gradient(
+  0deg,
+  rgba(185, 183, 207, 1) 0%,
+  rgba(139, 138, 150, 1) 72%
+);
+
+$dragon: linear-gradient(
+  0deg,
+  rgba(111, 56, 246, 1) 0%,
+  rgba(79, 41, 171, 1) 72%
+);
+
+$fairy: linear-gradient(
+  0deg,
+  rgba(249, 174, 199, 1) 0%,
+  rgba(172, 119, 137, 1) 72%
+);
+
+// GERAL
+$bg: #bdbdbd;
+$cor_fonte_principal: #fff;
+$menu_item_bg: rgb(170, 170, 170);
+$menu_item_bg_hover: rgb(78, 78, 78);
+$cor_fonte_secundaria: rgb(39, 38, 38);
+$detalhes_titulo: #6f6f6f;
+$fundo_detalhes: rgb(195, 195, 195);
+$fechar: rgb(214, 27, 27);
+$carregar_mais: #6c79db;
+
+// FONTE
+
+$font: "Comfortaa", cursive;
+
+@mixin fontPrincipal($tamanho) {
+  font-family: $font;
+  @if $tamanho == p {
+    font-size: 0.625rem;
+  } @else if $tamanho == m {
+    font-size: 1.5rem;
+  } @else if $tamanho == g {
+    font-size: 2rem;
+  } @else if $tamanho == gg {
+    font-size: 2.5rem;
+  }
+}

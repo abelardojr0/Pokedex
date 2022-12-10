@@ -2,7 +2,7 @@ const pokemonList = document.getElementById("pokemonList");
 const loadMoreButton = document.getElementById("loadMoreButton");
 const geracoes = document.querySelectorAll("[data-geracao]");
 let maxRecords = 1154;
-const limit = 12;
+const limit = 24;
 let offset = 0;
 function chamarGeracao(event) {
   event.preventDefault();
@@ -92,14 +92,15 @@ function convertPokemonToLi(pokemon) {
             <img src="${pokemon.photo}" alt="${pokemon.name}">
             <div class="modal-detalhes">
             <ul>
-            <li>Heigth: <span>${(pokemon.height / 10).toFixed(1)}m</span></li>
-            <li>Weight: <span>${(pokemon.weight / 10).toFixed(1)}Kg</span></li>
-            <li>HP: <span>${pokemon.hp}</span></li>
-            <li>Attack: <span>${pokemon.attack}</span></li>
-            <li>Defense: <span>${pokemon.defense}</span></li>
-            <li>Special Attack: <span>${pokemon.specialAttack}</span></li>
-            <li>Special Defense: <span>${pokemon.specialDefense}</span></li>
-            <li>Speed: <span>${pokemon.speed}</span></li>
+            <li>Habilidade: <span>${pokemon.ability}</span></li>
+            <li>Altura: <span>${(pokemon.height / 10).toFixed(1)}m</span></li>
+            <li>Peso: <span>${(pokemon.weight / 10).toFixed(1)}Kg</span></li>
+            <li>Vida: <span>${pokemon.hp}</span></li>
+            <li>Ataque: <span>${pokemon.attack}</span></li>
+            <li>Defesa: <span>${pokemon.defense}</span></li>
+            <li>Ataque Especial: <span>${pokemon.specialAttack}</span></li>
+            <li>Defesa Especial: <span>${pokemon.specialDefense}</span></li>
+            <li>Velocidade: <span>${pokemon.speed}</span></li>
         </ul>
             </div>
             <button class="fechar" data-fechar="${pokemon.name}">X</button>
