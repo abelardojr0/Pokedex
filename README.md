@@ -21,14 +21,7 @@ Projeto 100% responsivo!
 ![pokedex-mobile](https://user-images.githubusercontent.com/106066785/209392084-f6031080-3fd0-4965-a031-4027d6de1f5a.png)
 
 
-
-# :hammer: Funcionalidades do Projeto
-
-- `Funcionalidade 1`: Controle de Dados
-- `Funcionalidade 2`: Consulda em API
-
-
-# :pushpin: Projeto em Execução
+# :hammer: Projeto em Execução
 
 
 https://user-images.githubusercontent.com/106066785/209392170-865d6dba-ec7c-43f6-a143-2bd4ab4b1505.mp4
